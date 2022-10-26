@@ -2,16 +2,20 @@
 
 //first name's array
 let firstname = ["Andrea", "Marco", "Matteo", "Silvio"];
-let nfirstname = firstname.length;
-
-
 
 
 //last name's array
 let lastname = ["Panzeri", "Clapis", "Ciresa"];
-let nlastname = lastname.length;
 
 
-console.log(firstname[Math.round(Math.random() * (nfirstname - 1))] + ' ' + lastname[Math.round(Math.random() * (nlastname -1 ))])
+//made all the combination of name and surname
+//take a single name 
+for(let i = 0; i<firstname.length; i++){
+    //combine the single firstname with all the lastname
+    for(let x=0; x<lastname.length; x++){
+        //print the result
+        console.log(firstname[i] + ' ' + lastname[x]);
+    }
+}
 
 
